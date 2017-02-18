@@ -20,7 +20,7 @@ $(document).ready(function () {
         var id = $(this).attr('id');
         if (id) {
             //alert(id);
-            ga('send', 'event', 'shwu-ml', id);
+            ga('send', 'event', 'shwu-ss', id);
         }
     });
 });
