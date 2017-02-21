@@ -1,15 +1,21 @@
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5
+}
+
 nav {
     visibility: hidden;
 }
 
 /* Change if height of navigation changes. */
 .anchor {
-    padding-top: 20px; 
-    margin-top: -20px;    
+    padding-top: 20px;
+    margin-top: -20px;
 }
 
 blockquote {
-    font-size: 14px !important;
+    font-size: 16px !important;
     margin-bottom: 0;
 }
 
@@ -91,13 +97,13 @@ footer {
     nav {
         visibility: visible;
     }
-    
+
     /* Change if height of navigation changes. */
     .anchor {
-        padding-top: 70px; 
-        margin-top: -70px;    
+        padding-top: 70px;
+        margin-top: -70px;
     }
-    
+
     aside {
         margin-top: 50px;
     }
