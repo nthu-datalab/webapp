@@ -1,2 +1,5 @@
 .DS_Store
+*.pptx
+*.key
+.gitignore
 labs/PS2251-XX_phison_usb_flash_drive.png
