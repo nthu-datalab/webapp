@@ -19,6 +19,11 @@ blockquote {
     margin-bottom: 0;
 }
 
+.alert blockquote  {
+  border-color: #ddd;
+  border-color: rgba(0,0,0,.15);
+}
+
 .header {
     width: 100%;
     display: table;

@@ -1,34 +1,33 @@
-x
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Modern Web and App Programming</title>
-    <meta name="Description" content="aka Software Design & Studio @ NTHU CS">
-    <meta name="author" content="Shan-Hung Wu">
+  <title>Modern Web and App Programming</title>
+  <meta name="Description" content="An open course for full-stack developers that help turn ideas to systems and real impact.">
+  <meta name="author" content="Shan-Hung Wu">
 
-    <!-- Facebook Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="CS241002 Software Studio">
-    <meta property="og:title" content="CS241002 Software Studio" />
-    <meta property="og:url" content="https://nthu-datalab.github.io/ss/" />
-    <meta property="og:description" content="From ideas to projects to real impact." />
-    <meta property="og:image" content="http://www.cs.nthu.edu.tw/~shwu/images/og-image.jpg" />
+  <!-- Facebook Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Modern Web and App Programming">
+  <meta property="og:title" content="Modern Web and App Programming" />
+  <meta property="og:url" content="https://nthu-datalab.github.io/ss/" />
+  <meta property="og:description" content="An open course for full-stack developers that help turn ideas to systems and real impact." />
+  <meta property="og:image" content="http://www.cs.nthu.edu.tw/~shwu/images/og-image.jpg" />
 
-    <link rel="shortcut icon" href="./images/nthu.png" />
+  <link rel="shortcut icon" href="./images/nthu.png" />
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -36,571 +35,587 @@ x
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ss-navbar-collapse">
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ss-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="nav~~shwu" class="navbar-brand" href="http://www.cs.nthu.edu.tw/~shwu/">Shan-Hung Wu</a>
+        <a id="nav~~shwu" class="navbar-brand" href="http://www.cs.nthu.edu.tw/~shwu/">Shan-Hung Wu</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="ss-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a id="nav~~description" href="#description">Description</a>
+          </li>
+          <li>
+            <a id="nav~~announcement" href="#announcement">Announcement</a>
+          </li>
+          <li class="dropdown">
+            <a id="nav~~curriculum" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Curriculum <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a id="nav~~lecture00" href="#lecture00" alt="">00. Introduction</a></li>
+              <li><a id="nav~~lecture01" href="#lecture01" alt="">01. Web Development and HTML</a></li>
+              <li><a id="nav~~lecture02" href="#lecture02" alt="">02. CSS</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a id="nav~~entrepreneur" href="#entrepreneur" alt="">Bonus: How to Make Your Project Real?</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a id="nav~~lecture03" href="#lecture03" alt="">03. Landing Page and Bootstrap</a></li>
+              <li><a id="nav~~lecture04" href="#lecture04" alt="">04. Javascript - the Basics</a></li>
+              <li><a id="nav~~lecture05" href="#lecture05" alt="">05. Modern Javascript</a></li>
+              <li><a id="nav~~lecture06" href="#lecture06" alt="">06. React</a></li>
+              <li><a id="nav~~lecture07" href="#lecture07" alt="">07. Redux</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a id="nav~~lecture08" href="#lecture08" alt="">08. Backend Development and Node.js</a></li>
+              <!-- <li><a id="nav~~midterm" href="#midterm" alt="">Midterm Project - Web App</a></li>
+                            <li role="separator" class="divider"></li> -->
+              <li><a id="nav~~lecture09" href="#lecture09" alt="">09. Database Systems</a></li>
+              <li><a id="nav~~lecture10" href="#lecture10" alt="">10. Mobile Apps and React Native</a></li>
+              <!-- <li><a id="nav~~final" href="#final" alt="">Final Project - Mobile App</a></li> -->
+              <li role="separator" class="divider"></li>
+              <li><a id="nav~~final-demo" href="#final-demo" alt="">Final Demos from Outstanding Students</a></li>
+              <li><a id="nav~~roadmap" href="#roadmap" alt="">Bonus: Learning Roadmap</a></li>
+            </ul>
+          </li>
+          <li>
+            <a id="nav~~resources" href="#resources">Resources</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Full width image header with portrait -->
+  <header class="header image-bg-header">
+    <div class="header-content header-text">
+      <h2>Modern Web and App Programming</h2>
+      <h4>from Ideas to Systems to Real Impact</h4>
+    </div>
+  </header>
+
+  <!-- Content Sections -->
+
+  <section id="description">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <h1 class="section-heading">Description</h1>
+          <p>This course gives a comprehensive, self-contained, and up-to-date introduction to the web/app development. We focus on the development challenges in real-world situations and present guidelines, tools, and best practices. Students are asked
+            to team up and build real, useful applications (websites and/or mobile apps) accessible to the public in the end.</p>
+          <p>The classes are divided into three parts. First, we give a primer to web fundamentals such as HTTP, HTML, CSS, and Javascript. We cover different programming paradigms, including the OOP and functional programming. Handy tools such as Git are
+            covered to get students familiar with the project-based and team-based development. In the second part, we introduce modern web development techniques such as responsive design, Bootstrap, ES6/7, React, and Redux. Last, we extend our horizon
+            to the backend and mobile development landscapes by introducing the Node.js, PostgreSQL database system, Amazon Web Services (AWS), and React Native. We also give case studies on how to leverage Machine Learning algorithms to convert raw user
+            data into the AI.</p>
+
+          <h4>Instructor</h4>
+          <div class="float-container">
+            <div class="float-item">
+              <img class="img-portrait" src="./images/portrait-2011-square.jpg" alt="">
+              <p class="text-center"><a id="description~~shwu" href="http://www.cs.nthu.edu.tw/~shwu/" target="_blank">Shan-Hung Wu<br/>吳尚鴻</a></p>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="ss-navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a id="nav~~description" href="#description">Description</a>
-                    </li>
-                    <li>
-                        <a id="nav~~announcement" href="#announcement">Announcement</a>
-                    </li>
-                    <li class="dropdown">
-                        <a id="nav~~curriculum" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Curriculum <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a id="nav~~lecture00" href="#lecture00" alt="">00. Introduction</a></li>
-                            <li><a id="nav~~lecture01" href="#lecture01" alt="">01. Web Development and HTML</a></li>
-                            <li><a id="nav~~lecture02" href="#lecture02" alt="">02. CSS</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a id="nav~~entrepreneur" href="#entrepreneur" alt="">Starting Up Your Project: A Lean Approach</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a id="nav~~lecture03" href="#lecture03" alt="">03. Landing Page and Bootstrap</a></li>
-                            <li><a id="nav~~lecture04" href="#lecture04" alt="">04. Javascript - the Basics</a></li>
-                            <li><a id="nav~~lecture05" href="#lecture05" alt="">05. Modern Javascript</a></li>
-                            <li><a id="nav~~lecture06" href="#lecture06" alt="">06. React</a></li>
-                            <li><a id="nav~~lecture07" href="#lecture07" alt="">07. Redux</a></li>
-                            <li><a id="nav~~lecture08" href="#lecture08" alt="">08. Node.js and Backend Developement</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a id="nav~~midterm" href="#midterm" alt="">Midterm project - Web app</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a id="nav~~lecture09" href="#lecture09" alt="">09. Database Systems</a></li>
-                            <li><a id="nav~~lecture10" href="#lecture10" alt="">10. React Native</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a id="nav~~final" href="#final" alt="">Final project - Mobile app</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a id="nav~~looks_good" href="#looks_good" alt="">Excellent students' project</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="nav~~resources" href="#resources">Resources</a>
-                    </li>
-                </ul>
+            <br class="clearfloat">
+          </div>
+          <!-- float-container -->
+
+          <h4>Teaching Assistants</h4>
+          <div class="float-container">
+            <div class="float-item">
+              <img class="img-portrait" src="./images/ta/cwtseng.jpg" alt="">
+              <p class="text-center"><a id="description~~cwtseng" href="mailto:cwtseng@datalab.cs.nthu.edu.tw">Cheng-Wei Tseng<br>曾振瑋*</a>
+              </p>
             </div>
-            <!-- /.navbar-collapse -->
+            <div class="float-item">
+              <img class="img-portrait" src="./images/ta/tylin.jpg" alt="">
+              <p class="text-center"><a id="description~~tylin" href="mailto:tylin@datalab.cs.nthu.edu.tw">Tz-Yu Lin<br>林子瑜</a>
+              </p>
+            </div>
+            <div class="float-item">
+              <img class="img-portrait" src="./images/ta/rdolor.jpg" alt="">
+              <p class="text-center"><a id="description~~rdolor" href="mailto:rdolor@datalab.cs.nthu.edu.tw">Rosalie J. Dolor<br>羅莎莉</a>
+              </p>
+            </div>
+            <div class="float-item">
+              <img class="img-portrait" src="./images/ta/vrsanchezj.jpg" alt="">
+              <p class="text-center"><a id="description~~vrsanchezj" href="mailto:vrsanchezj@datalab.cs.nthu.edu.tw">Victor R. Sanchez<br>桑維克</a>
+              </p>
+            </div>
+            <br class="clearfloat">
+          </div>
+          <!-- float-container -->
         </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Full width image header with portrait -->
-    <header class="header image-bg-header">
-        <div class="header-content header-text">
-            <h2>Modern Web and App Programming</h2>
-            <h4>aka Software Design and Studio @ NTHU CS.</h4>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
+          <h4>Time &amp; Location</h4>
+          <ul>
+            <li>Video lectures: announced at Thur. afternoon</li>
+            <li>Labs: Tue. 3:30-5:20pm at EECS 326/328</li>
+            <li>Office hour: Thur. 1:00-3:00pm at Delta 723/724</li>
+          </ul>
         </div>
-    </header>
-
-    <!-- Content Sections -->
-
-    <section id="description">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h1 class="section-heading">Description</h1>
-                    <p> This course presents hands-on labs for students to be familiar with the software development process, techniques, and tools. Students are asked to build real, useful applications (websites and/or mobile apps) accessible to the public.</p>
-                    <p>The classes are divided into three parts. First, we give a primer to common web technologies such as HTTP, HTML, CSS, and Javascript. We cover different programming paradigms, including the OOP and functional programming. Handy tools such as Git are covered to get students familiar with the project-based and team-based development. In the second part, we introduce modern web development techniques such as React, Redux, Node.js, and Firebase and some reusable templates from Bootstrap and Reactstrap that speed up the development process. Last, we extend our horizon to the mobile development landscape by introducing the React Native. We also give case studies on how to leverage Machine Learning and Data Mining algorithms to convert raw user data into the app intelligence.</p>
-
-                    <h4>Instructor</h4>
-                    <div class="float-container">
-                        <div class="float-item">
-                            <img class="img-portrait" src="./images/portrait-2011-square.jpg" alt="">
-                            <p class="text-center"><a id="description~~shwu" href="http://www.cs.nthu.edu.tw/~shwu/" target="_blank">Shan-Hung Wu<br/>吳尚鴻</a></p>
-                        </div>
-                        <br class="clearfloat">
-                    </div>
-                    <!-- float-container -->
-
-                    <h4>Teaching Assistants</h4>
-                    <div class="float-container">
-                        <div class="float-item">
-                            <img class="img-portrait" src="./images/ta/cwtseng.jpg" alt="">
-                            <p class="text-center"><a id="description~~cwtseng" href="mailto:cwtseng@datalab.cs.nthu.edu.tw">Cheng-Wei Tseng<br>曾振瑋*</a>
-                            </p>
-                        </div>
-                        <div class="float-item">
-                            <img class="img-portrait" src="./images/ta/tylin.jpg" alt="">
-                            <p class="text-center"><a id="description~~tylin" href="mailto:tylin@datalab.cs.nthu.edu.tw">Tz-Yu Lin<br>林子瑜</a>
-                            </p>
-                        </div>
-                        <div class="float-item">
-                            <img class="img-portrait" src="./images/ta/rdolor.jpg" alt="">
-                            <p class="text-center"><a id="description~~rdolor" href="mailto:rdolor@datalab.cs.nthu.edu.tw">Rosalie J. Dolor<br>羅莎莉</a>
-                            </p>
-                        </div>
-                        <div class="float-item">
-                            <img class="img-portrait" src="./images/ta/vrsanchezj.jpg" alt="">
-                            <p class="text-center"><a id="description~~vrsanchezj" href="mailto:vrsanchezj@datalab.cs.nthu.edu.tw">Victor R. Sanchez<br>桑維克</a>
-                            </p>
-                        </div>
-                        <br class="clearfloat">
-                    </div>
-                    <!-- float-container -->
-                </div>
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
-                    <h4>Time &amp; Location</h4>
-                    <ul>
-                        <li>Video lectures: announced at Thur. afternoon</li>
-                        <li>Labs: Tue. 3:30-5:20pm at EECS 326/328</li>
-                        <li>Office hour: Thur. 1:00-3:00pm at Delta 723/724</li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4">
-                    <h4>Grading Policy</h4>
-                    <ul>
-                        <li>Idea + market survey: 10%</li>
-                        <li>Labs: 30%</li>
-                        <li>Midterm project: 30%</li>
-                        <li>Final project: 30%</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h4>Prerequisites</h4>
-                    <p>This course is intended for junior students who understand
-                        <ul>
-                            <li>Data Structure,</li>
-                            <li>Programming (in C or C++)</li>
-                        </ul>
-                        We use Javascript as the main programming language throughout the course.
-                    </p>
-                </div>
-                <!-- /.row -->
-            </div>
+        <div class="col-sm-6 col-md-5 col-lg-4">
+          <h4>Grading Policy</h4>
+          <ul>
+            <li>Idea + market survey: 10%</li>
+            <li>Labs: 30%</li>
+            <li>Midterm project: 30%</li>
+            <li>Final project: 30%</li>
+          </ul>
         </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div id="announcement" class="row anchor">
-                <div class="alert alert-success col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h1 class="section-heading">Announcement</h1>
-                    <ul>
-                        <li>
-                            <p>2017/07/01 - <a id="announcement~~looks_good" href="#looks_good" alt="">Excellent students' project</a>: video announced</p>
-                        </li>
-                        <li>
-                            <p>2017/06/07 - <a id="announcement~~final" href="#final" alt="">Final project - Mobile app</a>: slides announced</p>
-                        </li>
-                        <li>
-                            <p>2017/06/06 - <a id="announcement~~lecture10" href="#lecture10" alt="">10. React Native</a>: slides announced</p>
-                        </li>
-                        <li>
-                            <p>2017/05/11 - <a id="announcement~~midterm" href="#midterm" alt="">Midterm project - Web app</a>: slides announced</p>
-                        </li>
-                        <li>
-                            <p>2017/05/10 - <a id="announcement~~lecture09" href="#lecture09" alt="">09. Database Systems</a>: slides announced</p>
-                        </li>
-                    </ul>
-                    <div id="announcement-more" class="collapse">
-                        <ul>
-                            <li>
-                                <p>2017/04/29 - <a id="announcement~~lecture08" href="#lecture08" alt="">08. Node.js and Backend Developement</a>: slides announced</p>
-                            </li>
-                            <li>
-                                <p>2017/04/19 - <a id="announcement~~lecture07" href="#lecture07" alt="">07. Redux</a>: slides announced</p>
-                            </li>
-                            <li>
-                                <p>2017/04/01 - <a id="announcement~~lecture06" href="#lecture06" alt="">06. React</a>: slides announced</p>
-                            </li>
-                            <li>
-                                <p>2017/03/24 - <a id="announcement~~lecture05" href="#lecture05" alt="">05. Modern Javascript</a>: slides announced</p>
-                            </li>
-                            <li>
-                                <p>2017/03/16 - <a id="announcement~~lecture04" href="#lecture04" alt="">04. Javascript - the Basics</a>: slides announced</p>
-                            </li>
-                            <li>
-                                <p>2017/03/09 - <a id="announcement~~lecture03" href="#lecture03" alt="">03. Landing Page and Bootstrap</a>: slides announced</p>
-                            </li>
-                            <li>
-                                <p>2017/03/09 - <a id="announcement~~entrepreneur" href="#entrepreneur" alt="">Starting Up Your Project: A Lean Approach</a>: slides announced</p>
-                            </li>
-                            <li>
-                                <p>2017/03/04 - <a id="announcement~~lecture02" href="#lecture02" alt="">02. CSS</a>: slides announced</p>
-                            </li>
-                            <li>
-                                <p>2017/02/23 - <a id="announcement~~lecture01" href="#lecture01" alt="">01. Web Development and HTML</a>: slides announced</p>
-                            </li>
-                            <li>
-	                            <p>2017/02/16 - <a id="announcement~~lecture00" href="#lecture00" alt="">00. Introduction</a>: slides announced</p>
-	                        </li>
-                        </ul>
-                    </div>
-                    <p class="text-right">
-                        <button id="announcement~~more" class="btn btn-success" data-toggle="collapse" data-target="#announcement-more"><span class="glyphicon glyphicon-list"></span> More</button>
-                    </p>
-                </div>
-            </div>
-            <!-- /.row -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <h4>Prerequisites</h4>
+          <p>This course requires students to have solid understanding of
+            <ul>
+              <li>Data Structure,</li>
+              <li>Programming (in C/C++ or Java)</li>
+            </ul>
+            and the ability to trace a nontrivial project (e.g., one on the GitHub). We use Javascript as the main programming language throughout the course. Although being helpful, prior knowledge about Javascript is not necessary.
+          </p>
         </div>
-        <!-- /.container -->
-    </section>
+        <!-- /.row -->
+      </div>
+    </div>
+  </section>
 
-    <section id="curriculum">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h1 class="section-heading">Curriculum</h1>
-                    <p>If you have any feedback, feel free to contact: <span class="text-primary">shwu [AT] cs.nthu.edu.tw</span></p>
-                    <h4 id="lecture00" class="anchor">Lecture 00</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> Introduction</h4>
-                        <blockquote>About This Course... | FAQ</blockquote>
-                        <p class="text-right">
-                            <a id="lecture00~~slides" href="slides/00_Introduction.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> General Rules and Introduction to Git</h4>
-                        <blockquote>This lab guides you through the main idea of version control systems, the basic usage of Git, and how to submit on our GitLab.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture01~~lab" href="labs/01_Lab_Git.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> Git Command-line Tool Installation</h4>
-                        <blockquote>This appendix guides you how to install Git command-line tool.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture01~~app" href="labs/A_Git_Command-line_Tool_Installation.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture01" class="anchor">Lecture 01</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> Web Development and HTML</h4>
-                        <blockquote>Web Development | Basic HTML | Idea Generation | Lean Canvas</blockquote>
-                        <p class="text-right">
-                            <a id="lecture01~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDlD86V7FNTP8d7JBvQmITrP" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture01~~slides" href="slides/web/01_Web_HTML.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture02" class="anchor">Lecture 02</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> CSS</h4>
-                        <blockquote>Basic CSS | Selector | Layout | Stacking order</blockquote>
-                        <p class="text-right">
-                            <a id="lecture02~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDkGpN5725ZP7jR2vTHayk4E" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture02~~slides" href="slides/web/02_CSS.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-pencil"></span> My First Blog</h4>
-                        <blockquote>This lab quiz asks you to build a simple blog page.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture02~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-css-blog-quiz" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                        </p>
-                    </div>
-                    <h4 id="entrepreneur" class="anchor text-info">Starting Up Your Project: A Lean Approach</h4>
-                    <div class="well well-info">
-                        <h4><span class="glyphicon glyphicon-flag"></span> Idea Generation</h4>
-                        <blockquote>
-                            <p>Here are some tips that help you to generate Good Idea.</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="entrepreneur01~~video" href="https://www.youtube.com/watch?v=lt68yuHV4lc&list=PLlPcwHqLqJDlD86V7FNTP8d7JBvQmITrP&index=11" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="entrepreneur01~~slides" href="slides/entrepreneurship/01_Idea-Gen.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-flag"></span> Product Design</h4>
-                        <blockquote>
-                            <p>Here are some basic entrepreneur concept you can use in your Final project.</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="entrepreneur02~~video" href="https://www.youtube.com/watch?v=JGTk_7kaIQQ&list=PLlPcwHqLqJDlwNSyaBRQ3yao5UyhhxQuf&index=1" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="entrepreneur02~~slides" href="slides/entrepreneurship/02_Product-Design-Hack.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture03" class="anchor">Lecture 03</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> Landing Page and Bootstrap</h4>
-                        <blockquote>Product Design | Landing Page Demo | Basic Bootstrap | Layout | Flexbox | Media Queries | Containers | Grid sysem | Components | Tools</blockquote>
-                        <p class="text-right">
-                            <a id="lecture03~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDlwNSyaBRQ3yao5UyhhxQuf" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture03~~slides" href="slides/web/03_Bootstrap.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture04" class="anchor">Lecture 04</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> Javascript - the Basics</h4>
-                        <blockquote>Primitive Types | Object Types | Primitives v.s Objects | Expressions | Control Flows | Methods | DOM | Event Handling</blockquote>
-                        <p class="text-right">
-                            <a id="lecture04~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDlKxQfaWR1apRR9EPLz2-yG" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture04~~slides" href="slides/web/04_Javascript.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-pencil"></span> Color Game</h4>
-                        <blockquote>This lab quiz asks you to improve the Color game by adding two extra modes.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture04~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-js-color-game-quiz" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture05" class="anchor">Lecture 05</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> Modern Javascript</h4>
-                        <blockquote>Node.js | Webpack | Vendor Bundling | Packing CSS | Babel | Block Scoped Variables | Arrow Functions | Default Rest Spread | Destructuring | Template String Literals | Enhanced Object Literals | Classes and Inheritance | Symbols | Iterators and Generators | Property Initializers | OOP vs. FP</blockquote>
-                        <p class="text-right">
-                            <a id="lecture05~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDkPXpTPlMh8NtCUC-LWYb-f" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture05~~slides" href="slides/web/05_Modern-Javascript.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-pencil"></span> Tic-Tac-Toe</h4>
-                        <blockquote>This lab quiz asks you to build a Tic-Tac-Toe.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture05~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-js-tic-tac-toe-quiz" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                            <a id="lecture05~~lab" href="labs/05_Lab_Component_based_Game.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> Review</h4>
-                        <blockquote>Review</blockquote>
-                        <p class="text-right">
-                            <a id="lecture05~~review" href="labs/05_Lab_Component_based_Game.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture06" class="anchor">Lecture 06</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> React</h4>
-                        <blockquote>React | Components | JSX | States and Data flow | Form Elements | More JSX | Client-side Routing | AJAX | Debugging | Weather mood project</blockquote>
-                        <p class="text-right">
-                            <a id="lecture06~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDm9ZW6n7f6JGwLXO9ctuW3R"class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture06~~slides" href="slides/react/01_React.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> Tests</h4>
-                        <blockquote>Lab to study how to run tests in our applications.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture06~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-tests" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                            <a id="lecture06~~lab" href="labs/06_Tests.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> React Review and Cookie</h4>
-                        <blockquote>Review React and introduce cookie.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture06~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab6-react-practice" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                            <a id="lecture06~~lab" href="labs/06_Lab_React_Review_Cookie.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-pencil"></span> Assignment1 </h4>
-                        <blockquote>Improve weathermood project by adding one page which can show 5 days forecast.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture06~~assignment" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-react-weathermood-forecast" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture07" class="anchor">Lecture 07</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> Redux </h4>
-                        <blockquote>Redux | Why Redux | Action and Reducers | Splitting Reducers | Async Actions and Middleware | React+Redux | Remarkers | DevTools </blockquote>
-                        <p class="text-right">
-                            <a id="lecture07~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDndwtjgYp0mYtllK83Eco1U" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture07~~slides" href="slides/react/02_Redux.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> Tracing Weathermood </h4>
-                        <blockquote>Tracing the post function of Weathermood project.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture07~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-react-weathermood-post" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                            <a id="lecture07~~lab" href="labs/07_Lab_Weathermood_Post.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-pencil"></span> Assignment2 </h4>
-                        <blockquote>Use Redux to re-write post function.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture07~~assignment" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/as2-redux-weathermood-post" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture08" class="anchor">Lecture 08</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> Node.js and Backend Developement </h4>
-                        <blockquote> Node.js | Events and Asynchrnonous I/O | NPM and Yarg | Debugging | RESTful API | Express | Nodemon and Postman | Cloud Computing | Docker | AWS Elastic Beanstalk</blockquote>
-                        <p class="text-right">
-                            <a id="lecture08~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDkxqZqqAfElde6eESUCz0YO" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture08~~slides" href="slides/backend/01_Node_Backend.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> Deploy your app to AWS </h4>
-                        <blockquote>Lab to guide you how to deploy your app to AWS.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture08~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab9-weathermood-server" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                            <a id="lecture08~~lab" href="labs/08_Lab_AWS.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture09" class="anchor">Lecture 09</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> Database Systems </h4>
-                        <blockquote> Data Modeling | SQL Language | Surviving Big Data | Text Indexing | AWS RDS and Deployment</blockquote>
-                        <p class="text-right">
-                            <a id="lecture09~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDkLsH0P-TiAP_83XQaBWnAS" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture09~~slides" href="slides/backend/02_DB.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> Data Model </h4>
-                        <blockquote>Introduce the data model.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture09~~lab" href="labs/09_Lab_Data_Model.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> Advanced SQL </h4>
-                        <blockquote>Introduce some advanced SQL operation.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture09~~lab" href="labs/09_Lab_Advanced_SQL.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> Web Security </h4>
-                        <blockquote>Introduce web security.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture09~~lab" href="labs/09_Lab_Web_Security.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-pencil"></span> Assignment3 </h4>
-                        <blockquote>Improve weathermood todo function by using AWS RDS (relational database system).</blockquote>
-                        <p class="text-right">
-                            <a id="lecture09~~assignment" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/as3-weathermood-todo" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                        </p>
-                    </div>
-                    <h4 id="midterm" class="anchor text-info">Midterm project - Web app</h4>
-                    <div class="well well-info">
-                        <h4><span class="glyphicon glyphicon-flag"></span> Grading policy</h4>
-                        <blockquote>
-                            <p>Here is the grading policy of Midterm project.</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="midterm~~slides" href="labs/Midterm_Policy.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="lecture10" class="anchor">Lecture 10</h4>
-                    <div class="well">
-                        <h4><span class="glyphicon glyphicon-blackboard"></span> React Native </h4>
-                        <blockquote> React Native | Styling | Event Handling | Images and Icons | Data Access and Persistence | NativeBase | ScrollView and ListView | Navigation </blockquote>
-                        <p class="text-right">
-                            <a id="lecture10~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDnhXHlgF4tiKYN-K39zYMtR" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                            <a id="lecture10~~slides" href="slides/react/03_React_Native.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-wrench"></span> React Native Setup </h4>
-                        <blockquote>Lab to guide you setting up React Native.</blockquote>
-                        <p class="text-right">
-                            <a id="lecture10~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab10-react-native-timer" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                            <a id="lecture10~~lab" href="labs/10_Lab_React_Native_Setup.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="final" class="anchor text-info">Final project - Mobile app</h4>
-                    <div class="well well-info">
-                        <h4><span class="glyphicon glyphicon-flag"></span> Learning Roadmap and Grading Policy</h4>
-                        <blockquote>
-                            <p>Here are the Learning Roadmap and the Grading Policy of Final project.</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="final~~slides" href="slides/Learning-Roadmap.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                            <a id="final~~slides" href="labs/Final_Policy.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-                        </p>
-                    </div>
-                    <h4 id="looks_good" class="anchor text-info">Excellent students' project</h4>
-                    <div class="well well-info">
-                        <h4><span class="glyphicon glyphicon-flag"></span> Let's COLOR </h4>
-                        <blockquote>
-                            <p>Collect the color around you ! </p>
-                            <p>Author : 李峻毅、王俊凱</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="looks_good~~video" href="https://youtu.be/MJ3S4pRk7vM" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-flag"></span> NTHU Stage </h4>
-                        <blockquote>
-                            <p>We decide what we learn.</p>
-                            <p>Author : 張嘉軒、林軒毅、劉承諭、賴詰凱</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="looks_good~~video" href="https://youtu.be/vKAAIMyIpRc" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-flag"></span> Librarian </h4>
-                        <blockquote>
-                            <p>Librarian, your mobile library.</p>
-                            <p>Author : 林晉祥、許文弘、諸恩弘、朱彥睿</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="looks_good~~video" href="https://www.youtube.com/watch?v=Bt-zN63X3kI" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-flag"></span> GreenThumb </h4>
-                        <blockquote>
-                            <p>Gardening has never been easier.</p>
-                            <p>Author : 蔡冠偉、湯景皓、黃睿緯、李辰康</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="looks_good~~video" href="https://youtu.be/BIRd-df9Qzs" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                        </p>
-                        <h4><span class="glyphicon glyphicon-flag"></span> NTHU Chat </h4>
-                        <blockquote>
-                            <p>Chat with friends you slipped during school life.</p>
-                            <p>Author : 吳家榮、葉毓浩、陳永恒</p>
-                        </blockquote>
-                        <p class="text-right">
-                            <a id="looks_good~~video" href="https://youtu.be/XhnjWhmZwl0" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
-                        </p>
-
-                        
-                    </div>
-            </div>
-            <!-- /.row -->
+  <section>
+    <div class="container">
+      <div id="announcement" class="row anchor">
+        <div class="alert alert-success col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <h1 class="section-heading">Announcement</h1>
+          <ul>
+            <li>
+              <p>2017/07/01 - <a id="announcement~~final-demo" href="#final-demo" alt="">Final demos from utstanding students</a> announced</p>
+            </li>
+            <li>
+              <p>2017/06/07 - <a id="announcement~~final" href="#final" alt="">Final Project - Mobile App</a>: requirements announced</p>
+            </li>
+            <li>
+              <p>2017/06/06 - <a id="announcement~~lecture10" href="#lecture10" alt="">10. React Native</a>: slides announced</p>
+            </li>
+            <li>
+              <p>2017/05/11 - <a id="announcement~~midterm" href="#midterm" alt="">Midterm Project - Web App</a>: requirements announced</p>
+            </li>
+            <li>
+              <p>2017/05/10 - <a id="announcement~~lecture09" href="#lecture09" alt="">09. Database Systems</a>: slides announced</p>
+            </li>
+          </ul>
+          <div id="announcement-more" class="collapse">
+            <ul>
+              <li>
+                <p>2017/04/29 - <a id="announcement~~lecture08" href="#lecture08" alt="">08. Node.js and Backend Developement</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/04/19 - <a id="announcement~~lecture07" href="#lecture07" alt="">07. Redux</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/04/01 - <a id="announcement~~lecture06" href="#lecture06" alt="">06. React</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/03/24 - <a id="announcement~~lecture05" href="#lecture05" alt="">05. Modern Javascript</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/03/16 - <a id="announcement~~lecture04" href="#lecture04" alt="">04. Javascript - the Basics</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/03/09 - <a id="announcement~~lecture03" href="#lecture03" alt="">03. Landing Page and Bootstrap</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/03/09 - <a id="announcement~~entrepreneur" href="#entrepreneur" alt="">Starting Up Your Project: A Lean Approach</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/03/04 - <a id="announcement~~lecture02" href="#lecture02" alt="">02. CSS</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/02/23 - <a id="announcement~~lecture01" href="#lecture01" alt="">01. Web Development and HTML</a>: slides announced</p>
+              </li>
+              <li>
+                <p>2017/02/16 - <a id="announcement~~lecture00" href="#lecture00" alt="">00. Introduction</a>: slides announced</p>
+              </li>
+            </ul>
+          </div>
+          <p class="text-right">
+            <button id="announcement~~more" class="btn btn-success" data-toggle="collapse" data-target="#announcement-more"><span class="glyphicon glyphicon-list"></span> More</button>
+          </p>
         </div>
-        <!-- /.container -->
-    </section>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
 
-    <section id="resources">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h1 class="section-heading">Resources</h1>
-
-                    <h4>Other Course Materials</h4>
-                    <p>For more course materials (such as assigned reading, quiz, etc.) please refer to the GitLab.</p>
-                    <p class="text-right">
-                        <a id="resources~~gitlab" href="https://shwu10.cs.nthu.edu.tw/groups/courses-software-studio-2017-spring" target="_blank" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
-                    </p>
-                    <p>For online forum please refer to the iLMS system.</p>
-                    <p class="text-right">
-                        <a id="resources~~ilms" href="http://lms.nthu.edu.tw/course/28644" target="_blank" class="btn btn-primary"><span class="glyphicon glyphicon-comment"></span> iLMS System</a>
-                        <h4>Reference Books</h4>
-                        <ul>
-                            <li>
-                                <p>Alexander Osterwalder, Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers, 2010</p>
-                            </li>
-                            <li>
-                                <p>Eric Ries, The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses, 2011</p>
-                            </li>
-                            <li>
-                                <p>Peter Thiel, Blake Masters, Zero to One: Notes on Startups, or How to Build the Future, 2014</p>
-                            </li>
-                        </ul>
-                        <h4>Online Tutorial</h4>
-                        <ul>
-                            <li>
-                                <p><a id="resources~~w3schools" href="https://www.w3schools.com/" alt="" target="_blank">W3Schools Online Web Tutorials</a></p>
-                            </li>
-                            <li>
-                                <p><a id="resources~~reactjs" href="http://reactjs.co/" alt="" target="_blank">React Convention: A coding by Convention Guide for React JS and React Native Developers</a></p>
-                            </li>
-                        </ul>
-                </div>
-            </div>
-            <!-- /.row -->
+  <section id="curriculum">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <h1 class="section-heading">Curriculum</h1>
+          <p>If you have any feedback, feel free to contact: <span class="text-primary">shwu [AT] cs.nthu.edu.tw</span></p>
+          <h4 id="lecture00" class="anchor">Lecture 00</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> Introduction</h4>
+            <blockquote>About This Course... | FAQ</blockquote>
+            <p class="text-right">
+              <a id="lecture00~~slides" href="slides/00_Introduction.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> General Rules and Introduction to Git</h4>
+            <blockquote>This lab guides you through the main idea of version control systems, the basic usage of Git, and how to submit on our GitLab.</blockquote>
+            <p class="text-right">
+              <a id="lecture01~~lab" href="labs/01_Lab_Git.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Git Command-line Tool Installation</h4>
+            <blockquote>This appendix guides you how to install Git command-line tool.</blockquote>
+            <p class="text-right">
+              <a id="lecture01~~app" href="labs/A_Git_Command-line_Tool_Installation.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <h4 id="lecture01" class="anchor">Lecture 01</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> Web Development and HTML</h4>
+            <blockquote>Web Development | Basic HTML | Idea Generation | Lean Canvas</blockquote>
+            <p class="text-right">
+              <a id="lecture01~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDlD86V7FNTP8d7JBvQmITrP" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture01~~slides" href="slides/web/01_Web_HTML.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <h4 id="lecture02" class="anchor">Lecture 02</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> CSS</h4>
+            <blockquote>Basic CSS | Selector | Layout | Stacking order</blockquote>
+            <p class="text-right">
+              <a id="lecture02~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDkGpN5725ZP7jR2vTHayk4E" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture02~~slides" href="slides/web/02_CSS.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-pencil"></span> My First Blog</h4>
+            <blockquote>This lab quiz asks you to build a simple blog page.</blockquote>
+            <p class="text-right">
+              <a id="lecture02~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-css-blog-quiz" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+            </p>
+          </div>
+          <h4 id="entrepreneur" class="anchor text-warning">Bonus: How to Make Your Project Real?</h4>
+          <div class="alert alert-warning">
+            <h4><span class="glyphicon glyphicon-flag"></span> Idea Generation</h4>
+            <blockquote>
+              <p>Here are some tips that help you to generate “good” Ideas.</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="entrepreneur01~~video" href="https://www.youtube.com/watch?v=lt68yuHV4lc&list=PLlPcwHqLqJDlD86V7FNTP8d7JBvQmITrP&index=11" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="entrepreneur01~~slides" href="slides/entrepreneurship/01_Idea-Gen.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-flag"></span> Product Design</h4>
+            <blockquote>
+              <p>Here are some basic entrepreneur concept you should know before starting coding.</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="entrepreneur02~~video" href="https://www.youtube.com/watch?v=JGTk_7kaIQQ&list=PLlPcwHqLqJDlwNSyaBRQ3yao5UyhhxQuf&index=1" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="entrepreneur02~~slides" href="slides/entrepreneurship/02_Product-Design-Hack.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <h4 id="lecture03" class="anchor">Lecture 03</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> Landing Page and Bootstrap</h4>
+            <blockquote>Product Design | Landing Page Demo | Basic Bootstrap | Layout | Flexbox | Media Queries | Containers | Grid sysem | Components | Tools</blockquote>
+            <p class="text-right">
+              <a id="lecture03~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDlwNSyaBRQ3yao5UyhhxQuf" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture03~~slides" href="slides/web/03_Bootstrap.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <h4 id="lecture04" class="anchor">Lecture 04</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> Javascript - the Basics</h4>
+            <blockquote>Primitive Types | Object Types | Primitives v.s Objects | Expressions | Control Flows | Methods | DOM | Event Handling</blockquote>
+            <p class="text-right">
+              <a id="lecture04~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDlKxQfaWR1apRR9EPLz2-yG" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture04~~slides" href="slides/web/04_Javascript.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-pencil"></span> Color Game</h4>
+            <blockquote>This lab quiz asks you to improve the Color game by adding two extra modes.</blockquote>
+            <p class="text-right">
+              <a id="lecture04~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-js-color-game-quiz" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+            </p>
+          </div>
+          <h4 id="lecture05" class="anchor">Lecture 05</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> Modern Javascript</h4>
+            <blockquote>Node.js | Webpack | Vendor Bundling | Packing CSS | Babel | Block Scoped Variables | Arrow Functions | Default Rest Spread | Destructuring | Template String Literals | Enhanced Object Literals | Classes and Inheritance | Symbols | Iterators
+              and Generators | Property Initializers | OOP vs. FP</blockquote>
+            <p class="text-right">
+              <a id="lecture05~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDkPXpTPlMh8NtCUC-LWYb-f" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture05~~slides" href="slides/web/05_Modern-Javascript.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-pencil"></span> Tic-Tac-Toe</h4>
+            <blockquote>This quiz asks you to build a Tic-Tac-Toe.</blockquote>
+            <p class="text-right">
+              <a id="lecture05~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-js-tic-tac-toe-quiz" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+              <a id="lecture05~~lab" href="labs/05_Lab_Component_based_Game.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Review</h4>
+            <blockquote>A review of component-based programming at the client side by TAs.</blockquote>
+            <p class="text-right">
+              <a id="lecture05~~review" href="labs/05_Lab_Component_based_Game.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <h4 id="lecture06" class="anchor">Lecture 06</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> React</h4>
+            <blockquote>React | Components | JSX | States and Data flow | Form Elements | More JSX | Client-side Routing | AJAX | Debugging | Weather mood project</blockquote>
+            <p class="text-right">
+              <a id="lecture06~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDm9ZW6n7f6JGwLXO9ctuW3R" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture06~~slides" href="slides/react/01_React.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Testing</h4>
+            <blockquote>This lab shows how to write and run tests in your applications.</blockquote>
+            <p class="text-right">
+              <a id="lecture06~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-tests" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+              <a id="lecture06~~lab" href="labs/06_Tests.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> React Revisited and Cookies</h4>
+            <blockquote>This lab reviews some key concepts of React and introduces cookies, a commonly used client-side storage defined by HTTP.</blockquote>
+            <p class="text-right">
+              <a id="lecture06~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab6-react-practice" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+              <a id="lecture06~~lab" href="labs/06_Lab_React_Review_Cookie.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-pencil"></span> Assignment1 </h4>
+            <blockquote>Your goal is to improve the WeatherMood project by adding one page which shows 5-days forecast.</blockquote>
+            <p class="text-right">
+              <a id="lecture06~~assignment" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-react-weathermood-forecast" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+            </p>
+          </div>
+          <h4 id="lecture07" class="anchor">Lecture 07</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> Redux </h4>
+            <blockquote>Redux | Why Redux | Action and Reducers | Splitting Reducers | Async Actions and Middleware | React+Redux | Remarkers | DevTools </blockquote>
+            <p class="text-right">
+              <a id="lecture07~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDndwtjgYp0mYtllK83Eco1U" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture07~~slides" href="slides/react/02_Redux.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Tracing WeatherMood </h4>
+            <blockquote>This lab details the post function of the WeatherMood project.</blockquote>
+            <p class="text-right">
+              <a id="lecture07~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab-react-weathermood-post" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+              <a id="lecture07~~lab" href="labs/07_Lab_Weathermood_Post.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-pencil"></span> Assignment2 </h4>
+            <blockquote>Your mission here is to use Redux to re-write the post function.</blockquote>
+            <p class="text-right">
+              <a id="lecture07~~assignment" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/as2-redux-weathermood-post" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+            </p>
+          </div>
+          <h4 id="lecture08" class="anchor">Lecture 08</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> Backend Developement and Node.js</h4>
+            <blockquote> Node.js | Events and Asynchrnonous I/O | NPM and Yarg | Debugging | RESTful API | Express | Nodemon and Postman | Cloud Computing | Docker | AWS Elastic Beanstalk</blockquote>
+            <p class="text-right">
+              <a id="lecture08~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDkxqZqqAfElde6eESUCz0YO" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture08~~slides" href="slides/backend/01_Node_Backend.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Deployment on AWS </h4>
+            <blockquote>This lab gives you a step-by-step guide on how to deploy an app to the AWS.</blockquote>
+            <p class="text-right">
+              <a id="lecture08~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab9-weathermood-server" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+              <a id="lecture08~~lab" href="labs/08_Lab_AWS.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <h4 id="lecture09" class="anchor">Lecture 09</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> Database Systems </h4>
+            <blockquote> Data Modeling | SQL Language | Surviving Big Data | Text Indexing | AWS RDS and Deployment</blockquote>
+            <p class="text-right">
+              <a id="lecture09~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDkLsH0P-TiAP_83XQaBWnAS" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture09~~slides" href="slides/backend/02_DB.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Data Model </h4>
+            <blockquote>Introducing data models at the server side.</blockquote>
+            <p class="text-right">
+              <a id="lecture09~~lab" href="labs/09_Lab_Data_Model.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Advanced SQL </h4>
+            <blockquote>This lab introduces some advanced SQL operations.</blockquote>
+            <p class="text-right">
+              <a id="lecture09~~lab" href="labs/09_Lab_Advanced_SQL.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Web Security </h4>
+            <blockquote>This lab introduces the basics of web security.</blockquote>
+            <p class="text-right">
+              <a id="lecture09~~lab" href="labs/09_Lab_Web_Security.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-pencil"></span> Assignment3 </h4>
+            <blockquote>Your goal is to improve the WeatherMood TODO function by storing the TODOs in the AWS RDS (relational database system).</blockquote>
+            <p class="text-right">
+              <a id="lecture09~~assignment" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/as3-weathermood-todo" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+            </p>
+          </div>
+          <h4 id="lecture10" class="anchor">Lecture 10</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-blackboard"></span> React Native </h4>
+            <blockquote> React Native | Styling | Event Handling | Images and Icons | Data Access and Persistence | NativeBase | ScrollView and ListView | Navigation </blockquote>
+            <p class="text-right">
+              <a id="lecture10~~video" href="https://www.youtube.com/playlist?list=PLlPcwHqLqJDnhXHlgF4tiKYN-K39zYMtR" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="lecture10~~slides" href="slides/react/03_React_Native.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-wrench"></span> Setting It Up</h4>
+            <blockquote>This lab guides you through the setups of React Native on various devices.</blockquote>
+            <p class="text-right">
+              <a id="lecture10~~lab" href="https://shwu10.cs.nthu.edu.tw/courses-software-studio-2017-spring/lab10-react-native-timer" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+              <a id="lecture10~~lab" href="labs/10_Lab_React_Native_Setup.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <h4 id="final-demo" class="anchor text-info">Final Demos from Outstanding Students</h4>
+          <div class="alert alert-info">
+            <h4><span class="glyphicon glyphicon-flag"></span> Let's COLOR </h4>
+            <blockquote>
+              <p>Play with the colors around you!</p>
+              <p>Author : 李峻毅、王俊凱</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="final-demo~~video" href="https://youtu.be/MJ3S4pRk7vM" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-flag"></span> NTHU Stage </h4>
+            <blockquote>
+              <p>We decide what we learn.</p>
+              <p>Author : 張嘉軒、林軒毅、劉承諭、賴詰凱</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="final-demo~~video" href="https://youtu.be/vKAAIMyIpRc" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-flag"></span> Librarian </h4>
+            <blockquote>
+              <p>Librarian, your mobile library.</p>
+              <p>Author : 林晉祥、許文弘、諸恩弘、朱彥睿</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="final-demo~~video" href="https://www.youtube.com/watch?v=Bt-zN63X3kI" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-flag"></span> GreenThumb </h4>
+            <blockquote>
+              <p>Gardening has never been easier.</p>
+              <p>Author : 蔡冠偉、湯景皓、黃睿緯、李辰康</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="final-demo~~video" href="https://youtu.be/BIRd-df9Qzs" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+            </p>
+            <h4><span class="glyphicon glyphicon-flag"></span> NTHU Chat </h4>
+            <blockquote>
+              <p>Chat with friends you slipped during school life.</p>
+              <p>Author : 吳家榮、葉毓浩、陳永恒</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="final-demo~~video" href="https://youtu.be/XhnjWhmZwl0" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+            </p>
+          </div>
+          <h4 id="roadmap" class="anchor text-warning">Bonus: Learning Roadmap</h4>
+          <div class="alert alert-warning">
+            <h4><span class="glyphicon glyphicon-flag"></span> What to Lean Next?</h4>
+            <blockquote>
+              <p>Thank you all for participating in this course. For students who want to go further in web/app development, we have some recommendations for you.</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="roadmap~~video" href="https://www.youtube.com/watch?v=p1CDMGzE3tc&t=7s&index=14&list=PLlPcwHqLqJDnhXHlgF4tiKYN-K39zYMtR" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Video</a>
+              <a id="roadmap~~slides" href="slides/Learning-Roadmap.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
         </div>
-        <!-- /.container -->
-    </section>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <p class="text-center">Copyright &copy; DataLab 2017</p>
-                </div>
-            </div>
-            <!-- /.row -->
+  <section id="resources">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <h1 class="section-heading">Resources</h1>
+          <p>Here are some course materials and resources related to this course. For code and its details (such as assigned reading, project links, quiz, etc.) please refer to the GitLab. For online forum please refer to the iLMS system.</p>
+          <p class="text-right">
+            <a id="resources~~gitlab" href="https://shwu10.cs.nthu.edu.tw/groups/courses-software-studio-2017-spring" target="_blank" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
+            <a id="resources~~ilms" href="http://lms.nthu.edu.tw/course/28644" target="_blank" class="btn btn-primary"><span class="glyphicon glyphicon-comment"></span> iLMS System</a>
+          </p>
+          <h4 id="midterm" class="anchor">Midterm Project Requirements</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-flag"></span> Goal and Grading policy</h4>
+            <blockquote>
+              <p>Here is the grading policy of your midterm project. Your goal is the build a fully functional, responsive, and novel web app that is accessible to the public.</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="midterm~~slides" href="labs/Midterm_Policy.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <h4 id="final" class="anchor">Final Project Requirements</h4>
+          <div class="well">
+            <h4><span class="glyphicon glyphicon-flag"></span> Goal and Grading Policy</h4>
+            <blockquote>
+              <p>Here are the grading policy of your final project. Your goal is the build a mobile app that complements your website and improves the user experience.</p>
+            </blockquote>
+            <p class="text-right">
+              <a id="final~~slides" href="labs/Final_Policy.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+
+          <h4>Reference Books</h4>
+          <ul>
+            <li>
+              <p>Alexander Osterwalder, Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers, 2010</p>
+            </li>
+            <li>
+              <p>Eric Ries, The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses, 2011</p>
+            </li>
+            <li>
+              <p>Peter Thiel, Blake Masters, Zero to One: Notes on Startups, or How to Build the Future, 2014</p>
+            </li>
+          </ul>
+          <h4>Online Tutorial</h4>
+          <ul>
+            <li>
+              <p><a id="resources~~mdn" href="https://developer.mozilla.org" alt="" target="_blank">Mozilla Developer Network (MDN)</a></p>
+            </li>
+            <li>
+              <p><a id="resources~~w3schools" href="https://www.w3schools.com/" alt="" target="_blank">W3Schools Online Web Tutorials</a></p>
+            </li>
+            <li>
+              <p><a id="resources~~w3schools" href="https://aws.amazon.com/" alt="" target="_blank">Amazon Web Services (AWS)</a></p>
+            </li>
+            <li>
+              <p><a id="resources~~reactjs" href="http://reactjs.co/" alt="" target="_blank">React Convention: A coding by Convention Guide for React JS and React Native Developers</a></p>
+            </li>
+          </ul>
         </div>
-        <!-- /.container -->
-    </footer>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Fontawesome -->
-    <script src="https://use.fontawesome.com/f123208514.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="text-center">Copyright &copy; DataLab 2017</p>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </footer>
 
-    <script src="./js/main.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Fontawesome -->
+  <script src="https://use.fontawesome.com/f123208514.js"></script>
+
+  <script src="./js/main.js"></script>
 
 </body>
 
