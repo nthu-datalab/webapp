@@ -59,7 +59,7 @@
           </li>
           <li class="dropdown">
             <a id="nav~~curriculum" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Curriculum <span class="caret"></span></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu scrollable-menu">
               <li><a id="nav~~lecture00" href="#lecture00" alt="">00. Introduction</a></li>
               <li><a id="nav~~lecture01" href="#lecture01" alt="">01. Web Development and HTML</a></li>
               <li><a id="nav~~lecture02" href="#lecture02" alt="">02. CSS</a></li>
@@ -77,13 +77,15 @@
               <li><a id="nav~~entrepreneur03" href="#entrepreneur03" alt="">How to retent your user?</a></li>
               <li role="separator" class="divider"></li>
               <li><a id="nav~~lecture07" href="#lecture07" alt="">07. Redux</a></li>
-			        <!-- <li role="separator" class="divider"></li>
-              <li><a id="nav~~entrepreneur03" href="#entrepreneur03" alt="">Revenue & Growth</a></li>
-              <li role="separator" class="divider"></li> -->
               <li><a id="nav~~lecture08" href="#lecture08" alt="">08. Backend Development and Node.js</a></li>
               <li role="separator" class="divider"></li>
+              <li><a id="nav~~entrepreneur04" href="#entrepreneur04" alt="">BP & Revenu</a></li>
+              <li role="separator" class="divider"></li>
               <li><a id="nav~~lecture09" href="#lecture09" alt="">09. Database Systems</a></li>
-			        <!-- <li><a id="nav~~lecture10" href="#lecture10" alt="">10. Web Security & Authentication</a></li> -->
+              <li role="separator" class="divider"></li>
+              <li><a id="nav~~entrepreneur05" href="#entrepreneur05" alt="">Growth</a></li>
+              <li role="separator" class="divider"></li>
+			        <li><a id="nav~~lecture10" href="#lecture10" alt="">10. Web Security & Authentication</a></li>
               <li><a id="nav~~lecture11" href="#lecture11" alt="">11. Mobile Apps and React Native</a></li>
               <!-- <li><a id="nav~~final" href="#final" alt="">Final Project - Mobile App</a></li> -->
               <!-- <li role="separator" class="divider"></li> -->
@@ -208,6 +210,12 @@
           <h1 class="section-heading">Announcement</h1>
           <ul>
             <li>
+              <p>2019/05/23 - <a id="announcement~~entrepreneur05" href="#entrepreneur05" alt="">Bonus: Growth</a>: slides announced</p>
+            </li>
+            <li>
+              <p>2019/05/23 - <a id="announcement~~entrepreneur04" href="#entrepreneur04" alt="">Bonus: BP & Revenu</a>: slides announced</p>
+            </li>
+            <li>
               <p>2019/05/20 - <a id="announcement~~lecture10" href="#lecture10" alt="">10. Security & Authentication</a>: lab announced</p>
             </li>
             <li>
@@ -216,15 +224,15 @@
             <li>
               <p>2019/04/29 - <a id="announcement~~lecture11" href="#lecture11" alt="">11. React Native</a>: slides and video announced</p>
             </li>
-            <li>
-              <p>2019/04/29 - <a id="announcement~~lecture09" href="#lecture09" alt="">09. Database Systems</a>: slides and video announced</p>
-            </li>
-            <li>
-              <p>2019/04/29 - <a id="announcement~~lecture08" href="#lecture08" alt="">08. Backend Development and Node.js</a>: lab announced</p>
-            </li>
           </ul>
           <div id="announcement-more" class="collapse">
             <ul>
+              <li>
+                <p>2019/04/29 - <a id="announcement~~lecture09" href="#lecture09" alt="">09. Database Systems</a>: slides and video announced</p>
+              </li>
+              <li>
+                <p>2019/04/29 - <a id="announcement~~lecture08" href="#lecture08" alt="">08. Backend Development and Node.js</a>: lab announced</p>
+              </li>
               <li>
                 <p>2019/04/15 - <a id="announcement~~lecture08" href="#lecture08" alt="">08. Backend Development and Node.js</a>: slides and video announced</p>
               </li>
@@ -508,16 +516,6 @@
               <a id="lecture07~~lab" href="labs/08_Lab_Redux.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
             </p>
           </div>
-          <!-- <div class="alert alert-warning">
-            <h4 id="entrepreneur03"><span class="glyphicon glyphicon-flag"></span> Growth & Revenue</h4>
-            <blockquote>
-              <p> Revenue | Growth | Psychology-based Tactics </p>
-            </blockquote>
-            <p class="text-right">
-              <a id="" href="" class="btn btn-success disabled"><span class="glyphicon glyphicon-play"></span> Video</a>
-              <a id="entrepreneur03~~slides" href="slides/entrepreneurship/03_Growth_Revenue.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-            </p>
-          </div> -->
           <h4 id="lecture08" class="anchor">Lecture 08</h4>
           <div class="well">
             <h4><span class="glyphicon glyphicon-blackboard"></span> Backend Developement and Node.js</h4>
@@ -531,6 +529,15 @@
             <p class="text-right">
               <a id="lecture08~~lab" href="https://shwu10.cs.nthu.edu.tw/courses/web-app/2019-spring/lab-weathermood-server-file-todo" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
               <a id="lecture08~~lab" href="labs/08_Lab_AWS.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
+          <div class="alert alert-warning">
+            <h4 id="entrepreneur04"><span class="glyphicon glyphicon-flag"></span> Advanced: BP & Revenue</h4>
+            <blockquote>
+              <p> Business Planning | Revenue </p>
+            </blockquote>
+            <p class="text-right">
+              <a id="entrepreneur04~~slides" href="slides/entrepreneurship/04_BP_Revenue.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
             </p>
           </div>
           <h4 id="lecture09" class="anchor">Lecture 09</h4>
@@ -558,6 +565,15 @@
               <a id="lecture09~~lab" href="https://shwu10.cs.nthu.edu.tw/courses/web-app/2019-spring/lab-weathermood-server-db-todo" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
             </p>
           </div>
+          <div class="alert alert-warning">
+            <h4 id="entrepreneur05"><span class="glyphicon glyphicon-flag"></span> Advanced: Growth </h4>
+            <blockquote>
+              <p> Metric | Actions & Psychology </p>
+            </blockquote>
+            <p class="text-right">
+              <a id="entrepreneur05~~slides" href="slides/entrepreneurship/05_Growth.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
+            </p>
+          </div>
           <h4 id="lecture10" class="anchor">Lecture 10</h4>
           <div class="well">
             <h4><span class="glyphicon glyphicon-wrench"></span> Web Security & Authentication</h4>
@@ -572,16 +588,6 @@
               <a id="lecture010~~lab" href="https://shwu10.cs.nthu.edu.tw/courses/web-app/2019-spring/lab-weathermood-auth" class="btn btn-primary"><span class="fa fa-gitlab" aria-hidden="true"></span> GitLab</a>
             </p>
           </div>
-          <!-- <div class="alert alert-warning">
-            <h4><span class="glyphicon glyphicon-flag"></span> Team & Fund Raising</h4>
-            <blockquote>
-              <p>TBA</p>
-            </blockquote>
-            <p class="text-right">
-              <a id="" href="" class="btn btn-success disabled"><span class="glyphicon glyphicon-play"></span> Video</a>
-              <a id="" href="" class="btn btn-primary disabled"><span class="glyphicon glyphicon-blackboard"></span> Slides</a>
-            </p>
-          </div> -->
           <h4 id="lecture11" class="anchor">Lecture 11</h4>
           <div class="well">
             <h4><span class="glyphicon glyphicon-blackboard"></span> React Native </h4>

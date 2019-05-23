@@ -41,6 +41,12 @@ blockquote {
     vertical-align: middle;
 }
 
+.scrollable-menu {
+    height: auto;
+    max-height: 500px;
+    overflow-x: hidden;
+}
+
 .image-bg-header {
     text-align: center;
     -webkit-background-size: cover;
